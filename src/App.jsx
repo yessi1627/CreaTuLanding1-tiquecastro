@@ -1,4 +1,4 @@
-import MainLayout from "./layouts/MainLayout";
+import MainLayout from "./components/layouts/MainLayout";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 
 function App() {
