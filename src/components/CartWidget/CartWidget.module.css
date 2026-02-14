@@ -1,0 +1,27 @@
+.cartContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  position: relative;
+}
+
+
+.icon {
+  font-size: 30px; 
+  transition: transform 0.2s ease;
+}
+
+.icon:hover {
+  transform: scale(1.15);
+}
+
+
+.counter {
+  background: #e63946;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 3px 7px;
+  border-radius: 50%;
+}

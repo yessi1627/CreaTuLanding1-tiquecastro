@@ -5,8 +5,7 @@ import logo from "../../assets/logo.png";
 const NavBar = () => {
   return (
     <nav className={styles.navbar}>
-
-      <img src={logo} alt="Yeison Jimenez Store" className={styles.logo} />
+      <img src={logo} alt="Logo tienda" className={styles.logo} />
 
       <div className={styles.menu}>
         <a href="#">Ropa</a>
@@ -16,9 +15,8 @@ const NavBar = () => {
       </div>
 
       <CartWidget />
-
     </nav>
   );
 };
 
-
+export default NavBar;

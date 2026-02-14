@@ -1,0 +1,29 @@
+.container {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    #0f0f0f 0%,
+    #151515 100%
+  );
+}
+
+.content {
+  text-align: center;
+  max-width: 800px;
+  padding: 40px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.message {
+  font-size: 1.4rem;
+  color: #c9c9c9;
+}

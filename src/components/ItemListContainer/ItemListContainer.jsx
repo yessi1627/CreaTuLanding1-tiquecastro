@@ -1,15 +1,18 @@
+import styles from "./ItemListContainer.module.css";
+
 const ItemListContainer = ({ mensaje }) => {
   return (
-    <section
-      style={{
-        padding: "80px",
-        textAlign: "center",
-        fontSize: "2rem",
-        fontWeight: "600"
-      }}
-    >
-      {mensaje}
-    </section>
+    <main className={styles.container}>
+      <div className={styles.content}>
+        <h1 className={styles.title}>
+          Tienda Oficial Yeison Jiménez
+        </h1>
+
+        <p className={styles.message}>
+          {mensaje}
+        </p>
+      </div>
+    </main>
   );
 };
 

@@ -1,7 +1,10 @@
+import styles from "./CartWidget.module.css";
+
 const CartWidget = () => {
   return (
-    <div style={{ fontSize: "20px", cursor: "pointer" }}>
-      🛒 0
+    <div className={styles.cartContainer}>
+      <span className={styles.icon}>🛒</span>
+      <span className={styles.counter}>0</span>
     </div>
   );
 };
