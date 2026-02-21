@@ -1,15 +1,25 @@
-import styles from "./ItemListContainer.module.css";
+import { useEffect, useState } from "react";
+import { getProducts } from "../../data/products";
 
-const ItemListContainer = ({ mensaje }) => {
+const ItemListContainer = () => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    getProducts().then((res) => {
+      setProducts(res);
+    });
+  }, []);
+
   return (
-    <section className={styles.section}>
-      <div className={styles.container}>
-        <h1 className={styles.title}>
-          Tienda Oficial Yeison Jiménez
-        </h1>
+    <section>
+      <h2>Catálogo de productos</h2>
 
-        <p className={styles.message}>{mensaje}</p>
-      </div>
+      {products.map((product) => (
+        <div key={product.id}>
+          <h3>{product.title}</h3>
+          <p>${product.price}</p>
+        </div>
+      ))}
     </section>
   );
 };
