@@ -1,18 +1,14 @@
-import { Link } from "react-router-dom";
+import styles from "./Item.module.css";
 
 const Item = ({ product }) => {
   return (
-    <div style={{
-      border: "1px solid #444",
-      padding: "20px",
-      borderRadius: "8px"
-    }}>
+    <div className={styles.card}>
+      <img src={product.image} alt={product.title} />
+
       <h3>{product.title}</h3>
       <p>${product.price}</p>
 
-      <Link to={`/item/${product.id}`}>
-        Ver detalle
-      </Link>
+      <button>Ver detalle</button>
     </div>
   );
 };

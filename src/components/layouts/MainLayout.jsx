@@ -2,21 +2,28 @@ import NavBar from "../NavBar/NavBar";
 
 const MainLayout = ({ children }) => {
   return (
-    <>
+    <div
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        width: "100%",
+      }}
+    >
       <NavBar />
 
       <main
         style={{
           width: "100%",
-          maxWidth: "1200px",
-          margin: "0 auto",
-          padding: "40px 20px",
-          flex: 1
+          padding: "40px 60px",
+          marginTop: "90px",
+          flex: 1,
+          boxSizing: "border-box",
         }}
       >
         {children}
       </main>
-    </>
+    </div>
   );
 };
 

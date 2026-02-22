@@ -1,0 +1,36 @@
+.card {
+  background: #2f2b2b;
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 18px;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card button {
+  margin-top: 14px;
+  padding: 12px 22px;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: 600;
+}

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getProducts } from "../../data/products";
 import ItemList from "../ItemList/ItemList";
+import Slider from "../Slider/Slider";
 
 const ItemListContainer = () => {
 
@@ -11,11 +12,10 @@ const ItemListContainer = () => {
   }, []);
 
   return (
-    <section>
-      <h2>Catálogo de productos</h2>
-
+    <>
+      <Slider />
       <ItemList products={products} />
-    </section>
+    </>
   );
 };
 

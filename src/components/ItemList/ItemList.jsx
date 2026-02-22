@@ -1,12 +1,9 @@
+import styles from "./ItemList.module.css";
 import Item from "../Item/Item";
 
 const ItemList = ({ products }) => {
   return (
-    <div style={{
-      display: "grid",
-      gridTemplateColumns: "repeat(4, 1fr)",
-      gap: "20px"
-    }}>
+    <div className={styles.grid}>
       {products.map(prod => (
         <Item key={prod.id} product={prod} />
       ))}

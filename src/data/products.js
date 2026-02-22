@@ -29,6 +29,66 @@ export const products = [
     image: "/assets/pulsera.png",
     rating: 3
   },
+    {
+    id: "3",
+    title: "Pulsera Exclusiva",
+    price: 45000,
+    category: "accesorios",
+    stock: 20,
+    description: "Accesorio exclusivo",
+    image: "/assets/pulsera.png",
+    rating: 3
+  },
+    {
+    id: "3",
+    title: "Pulsera Exclusiva",
+    price: 45000,
+    category: "accesorios",
+    stock: 20,
+    description: "Accesorio exclusivo",
+    image: "/assets/pulsera.png",
+    rating: 3
+  },
+    {
+    id: "3",
+    title: "Pulsera Exclusiva",
+    price: 45000,
+    category: "accesorios",
+    stock: 20,
+    description: "Accesorio exclusivo",
+    image: "/assets/pulsera.png",
+    rating: 3
+  },
+    {
+    id: "3",
+    title: "Pulsera Exclusiva",
+    price: 45000,
+    category: "accesorios",
+    stock: 20,
+    description: "Accesorio exclusivo",
+    image: "/assets/pulsera.png",
+    rating: 3
+  },
+    {
+    id: "3",
+    title: "Pulsera Exclusiva",
+    price: 45000,
+    category: "accesorios",
+    stock: 20,
+    description: "Accesorio exclusivo",
+    image: "/assets/pulsera.png",
+    rating: 3
+  },
+    {
+    id: "3",
+    title: "Pulsera Exclusiva",
+    price: 45000,
+    category: "accesorios",
+    stock: 20,
+    description: "Accesorio exclusivo",
+    image: "/assets/pulsera.png",
+    rating: 3
+  },
 ];
 export const getProducts = () => {
   return new Promise((resolve) => {
